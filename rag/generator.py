@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import os
 
-DEFAULT_LLM_MODEL = "llama-3.1-8b-instant"
+DEFAULT_LLM_MODEL = "openai/gpt-oss-20b"
 NOT_FOUND = "I couldn't find that in the uploaded documents."
 
 SYSTEM_PROMPT = (
@@ -50,6 +50,6 @@ def answer(
             {"role": "user", "content": build_user_prompt(question, passages)},
         ],
         temperature=0,
-        max_tokens=500,
+        max_tokens=2000,
     )
     return response.choices[0].message.content.strip()
