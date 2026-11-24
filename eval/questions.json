@@ -1,0 +1,14 @@
+[
+  {"question": "What share of production traffic does a canary release receive first?", "expected": "5%"},
+  {"question": "How long do I have to start a rollback after a failed deployment?", "expected": "15 minutes"},
+  {"question": "What is the maximum allowed container image size?", "expected": "300 MB"},
+  {"question": "Which endpoint must every container expose for health checks?", "expected": "/healthz"},
+  {"question": "What is the maximum number of replicas for the default autoscaler?", "expected": "10 replicas"},
+  {"question": "How long are application logs retained?", "expected": "30 days"},
+  {"question": "At what error rate does an alert page the on-call engineer?", "expected": "2%"},
+  {"question": "Which tool is used to provision cloud resources?", "expected": "Terraform"},
+  {"question": "When does the on-call rotation change?", "expected": "Monday at 10:00 UTC"},
+  {"question": "What should I run to see the logs of a crashed container's previous run?", "expected": "kubectl logs --previous"},
+  {"question": "Which cluster is used for pre-production testing?", "expected": "staging-eu"},
+  {"question": "Within how many days must a postmortem be written after a rollback?", "expected": "3 working days"}
+]

@@ -1,0 +1,5 @@
+# Lightweight dependencies for CI (no torch / sentence-transformers needed for unit tests)
+chromadb>=0.5
+pypdf>=4.0
+pytest>=8.0
+ruff>=0.5
